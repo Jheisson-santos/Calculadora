@@ -14,10 +14,9 @@ console.log(`
         |   0 - Sair             |
         |________________________|
 `);
-let inp = +prompt('')
-
+let inp = prompt('')
 if(inp == ''){
-    console.log('Entrada invalida, digite novamente');
+ console.log('Digite um valor valido');
 } else if(!isNaN(inp)){
     if(inp == 1){
         funcoes.adicionar()
@@ -31,7 +30,7 @@ if(inp == ''){
         funcoes.porcentagem()
     } else if(inp == 0){
         break
-    } 
+    } else { console.log('Digite uma opção valida');}
     
 } else {
     console.log('Entrada invalida, digite novamente');
